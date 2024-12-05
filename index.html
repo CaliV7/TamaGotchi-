@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TamaGotchi</title>
+	<link rel="stylesheet" href="css/style.css">
+    <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.9.3/dist/confetti.browser.min.js"></script>
+</head>
+
+<body>
+    <div id="confetti"></div>
+    <div id="container">
+        <div id="pet-container">
+            <h1>Mon TamaGotchi</h1>
+            <div id="pet">🐸</div>
+            <div id="stats">
+                <div class="stat">Faim: <span id="hunger">0</span>%</div>
+                <div class="stat">Bonheur: <span id="happy">0</span>%</div>
+                <div class="stat">Énergie: <span id="energy">0</span>%</div>
+            </div>
+            <div id="buttons">
+                <button class="button" onclick="feeding()">🍕 Nourrir</button>
+                <button class="button" onclick="playing()">🎾 Jouer</button>
+                <button id="sleep-button" class="button" onclick="makeTheAnimalSleep()">😴 Dormir</button>
+            </div>
+            <div id="msg">Occupe-toi de moi ! 😢</div>
+        </div>
+
+	<script src="app.js"></script>
+    </div>
+</body>
+</html>
